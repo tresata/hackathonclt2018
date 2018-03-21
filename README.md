@@ -1,41 +1,41 @@
-Hackathon 2017
+Hackathon 2018
 ==============
 
-Welcome to hackathon 2017!
+Welcome to hackathon 2018!
 
-Download the kickoff deck for more information on the business problem, the hackathon agenda, the data, and more! Find it in the data folder: [Hackathon 2017 kickoff deck](https://github.com/tresata/hackathon2017/blob/master/data/hackathon_kickoff_deck2017.pdf)
+Download the kickoff deck for more information on the business problem, the hackathon agenda, the data, and more! Find it in the data folder: [Hackathon 2018 kickoff deck](https://github.com/tresata/hackathon2018/blob/master/data/hackathon_kickoff_deck2018.pdf)
 
 Table of Content: 
 
-* [IMPORTANT INFORMATION](https://github.com/tresata/hackathon2017#important-information)
-* [Getting Started](https://github.com/tresata/hackathon2017#getting-started)
-* [Machines](https://github.com/tresata/hackathon2017#machines)
-* [HDFS](https://github.com/tresata/hackathon2017#hdfs)
-* [Data](https://github.com/tresata/hackathon2017#data)
-* [Hive](https://github.com/tresata/hackathon2017#hive)
-* [Spark](https://github.com/tresata/hackathon2017#spark)
-* [pySpark](https://github.com/tresata/hackathon2017#pyspark)
-* [SparkR](https://github.com/tresata/hackathon2017#sparkR)
-* [Anaconda](https://github.com/tresata/hackathon2017#anaconda)
-* [Scalding](https://github.com/tresata/hackathon2017#scalding)
-* [Tresata Software](https://github.com/tresata/hackathon2017#tresata-software)
-* [Resource Manager](https://github.com/tresata/hackathon2017#resource-manager)
+* [IMPORTANT INFORMATION](https://github.com/tresata/hackathon2018#important-information)
+* [Getting Started](https://github.com/tresata/hackathon2018#getting-started)
+* [Machines](https://github.com/tresata/hackathon2018#machines)
+* [HDFS](https://github.com/tresata/hackathon2018#hdfs)
+* [Data](https://github.com/tresata/hackathon2018#data)
+* [Hive](https://github.com/tresata/hackathon2018#hive)
+* [Spark](https://github.com/tresata/hackathon2018#spark)
+* [pySpark](https://github.com/tresata/hackathon2018#pyspark)
+* [SparkR](https://github.com/tresata/hackathon2018#sparkR)
+* [Anaconda](https://github.com/tresata/hackathon2018#anaconda)
+* [Scalding](https://github.com/tresata/hackathon2018#scalding)
+* [Tresata Software](https://github.com/tresata/hackathon2018#tresata-software)
+* [Resource Manager](https://github.com/tresata/hackathon2018#resource-manager)
 
 ## IMPORTANT INFORMATION
 
-* Please make sure you spread out of all the boxes. There are 4 servers available for login, make sure you spreadout and not login to 1 box
-* Use tmux once you login into the server. If not, your session could get terminated and you can loose your work. Just type "tmux" once you login. To re-attach a tmux session "tmux attach". https://tmux.github.io/
+* Please make sure you spread out on all the boxes. There are 4 servers available for login, make sure you spreadout and not all login to 1 box. 
+* Use tmux once you login into the server. If not, your session could get terminated and you can lose your work. Just type "tmux" once you login. To re-attach a tmux session "tmux attach". https://tmux.github.io/
 
 ## Getting Started
 
-You can obtain a username and login information from one of the Tresata representatives or from sponsor's room.
+You can obtain a username and login information from one of the Tresata representatives or from sponsor's room (downstairs).
 
 ssh into a server where you can access the BBBS data.
 
-    > ssh <username>@hack02.datachambers.com OR
-    > ssh <username>@hack03.datachambers.com OR
-    > ssh <username>@hack04.datachambers.com OR
-    > ssh <username>@hack05.datachambers.com
+    > ssh <username>@hack02.nscom.com OR
+    > ssh <username>@hack03.nscom.com OR
+    > ssh <username>@hack04.nscom.com OR
+    > ssh <username>@hack05.nscom.com
     
 
 and enter the password you were given.
@@ -59,10 +59,10 @@ or
 
 ## Data
 
-**Data Dictionary** : It's present on /home/shared/data-dictionary and Slack hannel for DATA and [here](https://github.com/tresata/hackathon2017/blob/master/datadictionary)
+**Data Dictionary** : The links to the source data dictionaries can be found [here](https://github.com/tresata/hackathon2018/blob/master/datadictionary) . For any additional questions please use the DATA slack channel.
 
 **LOCAL**
-You can find the data on local (all machines) in the /home/shared/bbbs/ directory
+You can find the data on local (all machines) in the /srv/data directory
 
 ```
 ├── interviews
@@ -144,9 +144,9 @@ You can then extract the table from the hive warehouse for a table named test:
 
     df-source-cat --input hive%bbbs.question_ids > textfile
     
-We are also running hive-server on hack02.datachambers.com, hack03.datachambers.com, hack04.datachambers.com and hack05.datachambers.com. You can connect to them with JDBC/ODBC. For example to connect to hack04 with JDBC you would use this connect string:
+We are also running hive-server on hack01.nscom.com. You can connect to them with JDBC/ODBC. For example to connect to hack01 with JDBC you would use this connect string:
 
-    jdbc:hive2://hack04.datachambers.com:10000
+    jdbc:hive2://hack01.nscom.com:10000
     
 If you need to provide a username and password, use the username we provided for SSH login and leave the password blank. 
 
@@ -156,7 +156,7 @@ If you need to provide a username and password, use the username we provided for
 
 Now give the Spark-shell a test:
 
-    > /usr/local/lib/spark/bin/spark-shell --num-executors 4 --executor-cores 1 --executor-memory 1G
+    > /usr/local/lib/spark/bin/spark-shell --executor-cores 1 --executor-memory 1G
 
 
 Read in the data and run a simple query that calcuates the unique count of ChildZip:
@@ -167,7 +167,7 @@ Read in the data and run a simple query that calcuates the unique count of Child
 
 Note that for your "production" run on the dataset you might want to increase resources used on the cluster:
 
-    --num-executors 4 --executor-memory 4G --executor-cores 4
+   --executor-memory 4G --executor-cores 4
 
 Keep in mind that a spark-shell takes up these resources on the cluster even when you do not use them so please do not keep a spark-shell with "production" resources open unused.  
 
@@ -208,73 +208,21 @@ Anaconda is a completely free Python distribution from [Continuum Analytics](htt
 Getting failimar with conda: http://conda.pydata.org/docs/using/index.html
 
 
-## Scalding
-
-In addition to the Hive and Spark shells, we're also packaging eval-tool and df-eval-tool. These are tools to compile and run Scalding and Spark scripts without having to create a project. If you create a file called test.scala with the following contents:
-
-    import com.twitter.scalding._
-    import com.tresata.scalding.Dsl._
-
-    (args: Args) => {
-      new Job(args) {
-        Csv(args("input"), separator="|", skipHeader = true) .read
-          .groupBy('ChildZip) { _
-            .size('Zip_Count)
-          } 
-          .write(Csv(args("output"), separator="|", writeHeader = true))
-      }
-    } 
-
-
-you can run a query on the data set sample from the command-line:
-
-    > eval-tool test.scala --hdfs --input /data/bbbs/matches/active/match_details_new.bsv --output zip_counts.bsv
-
-This will generate a bar-separated file called 'zip_counts' in your HDFS home directory, containing the zip numbers along with their total counts.
-
-df-eval-tool
-
-    import com.twitter.scalding.Args
-    import com.tresata.spark.sql.Job
-
-    (args : Args) =>
-      new Job(args) {
-        override def run = {
-          import spark.implicits._
-          
-          spark.read.format("csv")
-            .option("header", true).option("delimiter", "|").option("inferSchema", true)
-            .load(args("input"))
-            .groupBy($"ChildZip").count()
-            .write.format("csv")
-            .option("header", true).option("delimiter", "|")
-            .save(args("output"))
-        }
-      }
-
-run df-eval-tool
-
-    > df-eval-tool test.scala --input /data/bbbs/matches/active/match_details_new.bsv --output zip_counts.bsv
-
 ## Tresata Software
 
 #### TREK
 Data Inventory Engine built specifically to catalog, profile and report data ontology, quality and format attributes for all data in Hadoop. TREK rapidly profiles and inventories “as-is” data stored in Hadoop across all rows and columns to create an informed view of all valuable enterprise data feeds stored in a single Hadoop cluster.
 
-TREK can be accessed via https://hack01.datachambers.com:5601
+TREK can be accessed via http://hack01.nscom.com:5603
 
 For login, it's the same username and password you use or SSH.
 
 ## Resource Manager
 
-http://hack01.datachambers.com:8088/
+http://hack01.nscom.com:8088/
 
-## Samba File Server
-We are running a samba server for remote access to the data files. In Windows this is also known as a Network Drive. The share location is:
+### PuTTY
+Here is the link to download puTTY for remote access to the data files. This is useful if you have a Windows computer. The download link is:
 
-    smb://hack01.datachambers.com/myshare/
+https://www.putty.org/
     
-On windows you would specify this as:
-
-    \\hack01.datachambers.com\myshare
-
