@@ -1,0 +1,193 @@
+| field                          | description                                                                                                   | 
+|--------------------------------|---------------------------------------------------------------------------------------------------------------| 
+| Interview # / Match #          | Number assigned to the match                                                                                  | 
+| AgencyName                     | "BBBS of Greater Charlotte"                                                                                   | 
+| AgencyGroup                    | "Default"                                                                                                     | 
+| OfficeName                     | "BBBS of Greater Charlotte"                                                                                   | 
+| TeamName                       | "Main Office"                                                                                                 | 
+| MatchType                      | "C" for community based or "S" for site based                                                                 | 
+| MatchStatus                    | indicates if the match is currently active                                                                    | 
+| MatchOpenDate                  | date match was approved by big and little's gaurdian                                                          | 
+| MatchCloseDate                 | date match was officially closed                                                                              | 
+| SurveyType                     | "baseline" for pre-program orr "followup" for post-program survey                                             | 
+| YOSScheduledDate               | date survey was sent                                                                                          | 
+| YOSCompletionDate              | date survey was completed                                                                                     | 
+| YOSCompletionType              | "complete", "declined", or "expired"                                                                          | 
+| YOSStatus                      | "done" or "late"                                                                                              | 
+| Q1                             | numeric value associated to question 1                                                                        | 
+| Q2Neg                          | numeric value associated to question 2                                                                        | 
+| Q3Neg                          | numeric value associated to question 3                                                                        | 
+| Q4Neg                          | numeric value associated to question 4                                                                        | 
+| Q5                             | numeric value associated to question 5                                                                        | 
+| Q6                             | numeric value associated to question 6                                                                        | 
+| SocAccept                      | composite score summarizing questions 1-6 (social acceptance)                                                 | 
+| Q1b                            | numeric value associated to question 1 from the baseline survey                                               | 
+| Q2b                            | numeric value associated to question 2 from the baseline survey                                               | 
+| Q3b                            | numeric value associated to question 3 from the baseline survey                                               | 
+| Q4b                            | numeric value associated to question 4 from the baseline survey                                               | 
+| Q5b                            | numeric value associated to question 5 from the baseline survey                                               | 
+| Q6b                            | numeric value associated to question 6 from the baseline survey                                               | 
+| SocAcceptB                     | composite score summarizing questions 1-6 from the baseline assesment                                         | 
+| SocAcceptPrcnt                 | percent change in SocAccept from the baseline assessment                                                      | 
+| Q7Neg                          | numeric value associated to question 7                                                                        | 
+| Q8                             | numeric value associated to question 8                                                                        | 
+| Q9                             | numeric value associated to question 9                                                                        | 
+| Q10Neg                         | numeric value associated to question 10                                                                       | 
+| Q11Neg                         | numeric value associated to question 11                                                                       | 
+| Q12                            | numeric value associated to question 12                                                                       | 
+| SchComp                        | composite score summarizing questions 7-12 (scholastic competency)                                            | 
+| Q7b                            | numeric value associated to question 7 from the baseline survey                                               | 
+| Q8b                            | numeric value associated to question 8 from the baseline survey                                               | 
+| Q9b                            | numeric value associated to question 9 from the baseline survey                                               | 
+| Q10b                           | numeric value associated to question 10 from the baseline survey                                              | 
+| Q11b                           | numeric value associated to question 11 from the baseline survey                                              | 
+| Q12b                           | numeric value associated to question 12 from the baseline survey                                              | 
+| SchCompB                       | composite score summarizing questions 7-12 from the baseline assesment                                        | 
+| SchCompPrcnt                   | percent change in SchComp from the baseline assessment                                                        | 
+| Q13                            | numeric value associated to question 13                                                                       | 
+| Q14                            | numeric value associated to question 14                                                                       | 
+| Q15                            | numeric value associated to question 15                                                                       | 
+| EdExpect                       | composite score summarizing questions 13-15 (educational expectations)                                        | 
+| Q13b                           | numeric value associated to question 13 from the baseline survey                                              | 
+| Q14b                           | numeric value associated to question 14 from the baseline survey                                              | 
+| Q15b                           | numeric value associated to question 15 from the baseline survey                                              | 
+| EdExpectb                      | composite score summarizing questions 13-15 from the baseline assesment                                       | 
+| EdExpectPrcnt                  | percent change in EdExpect from the baseline assessment                                                       | 
+| Q16                            | numeric value associated to question 16                                                                       | 
+| Q17                            | numeric value associated to question 17                                                                       | 
+| Q18                            | numeric value associated to question 18                                                                       | 
+| Q19                            | numeric value associated to question 19                                                                       | 
+| Grades                         | composite score summarizing questions 16-19 (grades)                                                          | 
+| Q16b                           | numeric value associated to question 16 from the baseline survey                                              | 
+| Q17b                           | numeric value associated to question 17 from the baseline survey                                              | 
+| Q18b                           | numeric value associated to question 18 from the baseline survey                                              | 
+| Q19b                           | numeric value associated to question 19 from the baseline survey                                              | 
+| Gradesb                        | composite score summarizing questions 16-19 from the baseline assesment                                       | 
+| GradesPrcnt                    | percent change in Grades from the baseline assessment                                                         | 
+| Q20Neg                         | numeric value associated to question 20                                                                       | 
+| Q21Neg                         | numeric value associated to question 21                                                                       | 
+| Q22Neg                         | numeric value associated to question 22                                                                       | 
+| Q23Neg                         | numeric value associated to question 23                                                                       | 
+| Q24Neg                         | numeric value associated to question 24                                                                       | 
+| Q25Neg                         | numeric value associated to question 25                                                                       | 
+| Q26Neg                         | numeric value associated to question 26                                                                       | 
+| RiskAtt                        | composite score summarizing questions 20-26 (risk attitude)                                                   | 
+| Q20b                           | numeric value associated to question 20 from the baseline survey                                              | 
+| Q21b                           | numeric value associated to question 21 from the baseline survey                                              | 
+| Q22b                           | numeric value associated to question 22 from the baseline survey                                              | 
+| Q23b                           | numeric value associated to question 23 from the baseline survey                                              | 
+| Q24b                           | numeric value associated to question 24 from the baseline survey                                              | 
+| Q25b                           | numeric value associated to question 25 from the baseline survey                                              | 
+| Q26b                           | numeric value associated to question 26 from the baseline survey                                              | 
+| RiskAttb                       | composite score summarizing questions 20-26 from the baseline assesment                                       | 
+| RiskAttPrcnt                   | percent change in RiskAtt from the baseline assessment                                                        | 
+| Q27                            | numeric value associated to question 27                                                                       | 
+| Q28                            | numeric value associated to question 28                                                                       | 
+| Q29                            | numeric value associated to question 29                                                                       | 
+| PTrust                         | composite score summarizing questions 27-29 (parental trust)                                                  | 
+| Q27b                           | numeric value associated to question 27 from the baseline survey                                              | 
+| Q28b                           | numeric value associated to question 28 from the baseline survey                                              | 
+| Q29b                           | numeric value associated to question 29 from the baseline survey                                              | 
+| PTrustb                        | composite score summarizing questions 27-29 from the baseline assesment                                       | 
+| PTrustPrcnt                    | percent change in PTrust from the baseline assessment                                                         | 
+| Q30Neg                         | numeric value associated to question 30                                                                       | 
+| Q31Neg                         | numeric value associated to question 31                                                                       | 
+| Truancy                        | composite score summarizing questions 30-31 (truancy)                                                         | 
+| Q30b                           | numeric value associated to question 30 from the baseline survey                                              | 
+| Q31b                           | numeric value associated to question 31 from the baseline survey                                              | 
+| Truancyb                       | composite score summarizing questions 30-31 from the baseline assesment                                       | 
+| TruancyPrcnt                   | percent change in Truancy from the baseline assessment                                                        | 
+| Q32                            | numeric value associated to question 32                                                                       | 
+| SpAdult                        | composite score summarizing question 32 (special adult)                                                       | 
+| Q32b                           | numeric value associated to question 32 from the baseline survey                                              | 
+| SpAdultb                       | composite score summarizing question 32 from the baseline assesment                                           | 
+| SpAdultPrcnt                   | percent change in SpAdult from the baseline assessment                                                        | 
+| Q33Neg                         | numeric value associated to question 33                                                                       | 
+| JJustice                       | composite score summarizing question 33 (juvenile justice)                                                    | 
+| Q33b                           | numeric value associated to question 33 from the baseline survey                                              | 
+| JJusticeB                      | composite score summarizing question 33 from the baseline assesment                                           | 
+| JJusticePrcnt                  | percent change in JJustice from the baseline assessment                                                       | 
+| MatchSupportLevel              | green - good | yellow - monitor | red - put on hold and investigate                                           | 
+| MatchReportSources             | tag used by BBBS team to pull reports on matches for a specific program                                       | 
+| MatchClosureReasons            | reasons for match closure (selected from preset list)                                                         | 
+| MatchLength                    | time in months                                                                                                | 
+| CouplesMatch                   | indicated if the match was done as a pair (a couple acts together as a big to 1 or 2 littles)                 | 
+| MatchCountChild                | number of matches the little has been a part of                                                               | 
+| SegmentMatchCountChild         | number of matches the little has been a part of                                                               | 
+| MatchCountVolunteer            | number of matches the big has been a part of                                                                  | 
+| SegmentMatchCountVolunteer     | number of matches the big has been a part of                                                                  | 
+| ChildGender                    | little's gender                                                                                               | 
+| ChildEthnicity                 | little's ethnicity                                                                                            | 
+| ChildNationality               | little's nationality                                                                                          | 
+| ChildAge                       | little's age current age                                                                                      | 
+| IncarceratedParent             | indicates if one of the little's parents/gaurdians is incarcerated                                            | 
+| AdultChildRelationship         | indicate the relationship the little's gaurdian shares with them (mother, grandmother, etc.)                  | 
+| ChildZip                       | little's 5 digit zip code at the time of the match                                                            | 
+| ChildGrade                     | little's grade at the time of the match                                                                       | 
+| ChildLivingSituation           | little's living situation at the time of the match (who they lived with)                                      | 
+| ChildIncomeLevel               | income level of the little's household at the time of the match                                               | 
+| ChildFamilyAssistance          | indicates if the family recieves public financial assistance                                                  | 
+| ChildFreeReducedLunch          | indicates if the little qualified for a free/reduced lunch program at their school at the time of the match   | 
+| CustodialAdultEmployerHash     | hashed id for the parent/gaurdian's employer at the time of the match                                         | 
+| ChildReferralSource            | how the little heard about the BBBS (from a preset list of options)                                           | 
+| ChildReferralType              | how the little heard about the BBBS (from a preset list of options)                                           | 
+| ChildAutomaticProgramName      | indicates if the little signed up through a community or site based matching program                          | 
+| ChildReportSources             | tag used by BBBS team to pull reports on littles for a specific program                                       | 
+| ChildActiveQueue               | little's current match status (in enrollment, ready to be matched, pending match approval, matched)           | 
+| VolGender                      | big's gender                                                                                                  | 
+| VolEthnicity                   | big's ethinicity                                                                                              | 
+| VolNationality                 | big's nationality                                                                                             | 
+| VolAge                         | big's current age                                                                                             | 
+| VolZip                         | big's 5 digit zip code at the time of the match                                                               | 
+| VolEducationLevel              | big's highest level of education achieved at the time of the match                                            | 
+| VolMaritalStatus               | big's marital staus at the time of the match                                                                  | 
+| VolOccupation                  | big's occupation at the time of the match                                                                     | 
+| VolEmployerZipCode             | 5 digit zip code of the big's employer                                                                        | 
+| VolEmploymentLengthYears       | number of years the big has been employed with current employer (additive with months)                        | 
+| VolEmploymentLengthMonths      | number of months the big has been employed with current employer (addititve with years)                       | 
+| VolReferralSource              | how the big heard about the BBBS (from a preset list of options)                                              | 
+| VolReferralType                | how the big heard about the BBBS (from a preset list of options)                                              | 
+| VolunteerType                  | "Big"                                                                                                         | 
+| VolAutomaticProgramName        | indicates if the big signed up through a community or site based matching program                             | 
+| VolReportSources               | tag used by BBBS team to pull reports on bigs for a specific program                                          | 
+| VolActiveQueue                 | big's current match status (in enrollment, ready to be matched, pending match approval, matched)              | 
+| AgencyID                       | numeric id corresponding to AgencyName                                                                        | 
+| AgencyGroupKey                 | numeric id corresponding to AgencyGroup                                                                       | 
+| LocationKey                    | numeric id corresponding to OfficeName                                                                        | 
+| TeamKey                        | numeric id corresponding to TeamName                                                                          | 
+| UserKey                        | numeric id of the BBBS staff member responsible for the match                                                 | 
+| ChildPartKey                   | numeric id for the little                                                                                     | 
+| CustodialAdultKey              | numeric id for the little's primary parent/gaurdian                                                           | 
+| ChildEthnicityKey              | numeric id corresponding to ChildEthnicity                                                                    | 
+| ChildNationalityKey            | numeric id corresponding to ChildNationality                                                                  | 
+| ChildGenderKey                 | numeric id corresponding to ChildGender                                                                       | 
+| VolPartKey                     | numeric id for the big                                                                                        | 
+| VolEthnicityKey                | numeric id corresponding to VolEthnicity                                                                      | 
+| VolNationalityKey              | numeric id corresponding to VolNationality                                                                    | 
+| VolGenderKey                   | numeric id corresponding to VolGender                                                                         | 
+| MatchKey                       | numeric id for the match (little-big pair)                                                                    | 
+| MatchTypeKey                   | numeric id corresponding to MatchType                                                                         | 
+| SiteTypeKey                    | numeric id corresponding to the site for a site-based match                                                   | 
+| MatchActivityKey               | numeric id for the program through which the match was made                                                   | 
+| SiteKey                        | numeric id for the site through which the match was made                                                      | 
+| StatusKey                      | numeric id corresponding to MatchStatus                                                                       | 
+| MatchSupportLevelKey           | numeric id corresponding to MatchSupportLevel                                                                 | 
+| MatchReportSourceKey           | numeric id corresponding to MatchReportSources                                                                | 
+| ChildReportSourceKey           | numeric id corresponding to ChildReportSources                                                                | 
+| ChildAutomaticProgramKey       | numeric id corresponding to ChildAutomaticProgramName                                                         | 
+| VolReportSourcesKey            | numeric id corresponding to VolReportSources                                                                  | 
+| VolAutomaticProgramKey         | numeric id corresponding to VolAutomaticProgramName                                                           | 
+| ChildReferralSourceKey         | numeric id corresponding to ChildReferralSource                                                               | 
+| ChildReferralSourceTypeKey     | numeric id corresponding to ChildReferralType                                                                 | 
+| ChildPartnerAffiliationKey     | numeric id of BBBS partner organization the little was involved with at the time of the match                 | 
+| ChildPartnerAffiliationTypeKey | numeric id of the type of the BBBS partner organization the little was involved with at the time of the match | 
+| VolReferralSourceKey           | numeric id corresponding to VolReferralSource                                                                 | 
+| VolReferralSourceTypeKey       | numeric id corresponding to VolReferralType                                                                   | 
+| VolPartnerAffiliationKey       | numeric id BBBS partner organization the big was involved with at the time of the match                       | 
+| VolPartnerAffiliationTypeKey   | numeric id of the type of the BBBS partner organization the big was involved with at the time of the match    | 
+| VolunteerTypeKey               | numeric id corresponding to VolunteerType                                                                     | 
+| YOSSurveyKey                   | numeric id for survey                                                                                         | 
+| PriorBaselineYOSSurveyKey      | numeric id for the baseline survey                                                                            | 
+| YOSStatusKey                   | numeric id corresponding to YOSStatus                                                                         | 
+| YOSCompletionTypeKey           | numeric id corresponding to YOSCompletionType                                                                 | 
+| SurveyTypeKey                  | numeric id corresponding to SurveyType                                                                        | 

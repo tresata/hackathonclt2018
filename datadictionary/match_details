@@ -1,0 +1,103 @@
+| field                          | description                                                                                                   | 
+|--------------------------------|---------------------------------------------------------------------------------------------------------------| 
+| Match #                        | number assigned to the big-little match (prefaced with an "M")                                                | 
+| AgencyName                     | "BBBS of Greater Charlotte"                                                                                   | 
+| AgencyGroup                    | "Default"                                                                                                     | 
+| OfficeName                     | "BBBS of Greater Charlotte"                                                                                   | 
+| TeamName                       | "Main Office"                                                                                                 | 
+| Hybrid Y/N                     | indicates if a match is cross gender (Y) on not (N)                                                           | 
+| MatchType                      | "C" for community based or "S" for site based                                                                 | 
+| MatchStatus                    | indicates if the match is currently active                                                                    | 
+| QueueDescription               | little's current match status (in enrollment, ready to be matched, pending match approval, matched)           | 
+| TimeInQueue                    | time the match spent in queue in days                                                                         | 
+| MatchSupportLevel              | green - good | yellow - monitor | red - put on hold and investigate                                           | 
+| MatchReportSources             | tag used by BBBS team to pull reports on littles for a specific program                                       | 
+| PendingMatchDate               | date a match was found, pending approval of big and little's gaurdian                                         | 
+| MatchOpenDate                  | date match was approved by big and little's gaurdian                                                          | 
+| MatchCloseDate                 | date match was officially closed                                                                              | 
+| MatchClosureReasons            | reasons for match closure (selected from preset list)                                                         | 
+| MatchClosurePrimaryReason      | primary reason for match closure                                                                              | 
+| MatchClosureSecondaryReason    | secondary reason for match closure                                                                            | 
+| MatchLength                    | time in months                                                                                                | 
+| CouplesMatch                   | indicated if the match was done as a pair (a couple acts together as a big to 1 or 2 littles)                 | 
+| MatchCountChild                | number of matches the little has been a part of                                                               | 
+| SegmentMatchCountChild         | number of matches the little has been a part of                                                               | 
+| MatchCountVolunteer            | number of matches the big has been a part of                                                                  | 
+| SegmentMatchCountVolunteer     | number of matches the big has been a part of                                                                  | 
+| ChildGender                    | little's gender                                                                                               | 
+| ChildEthnicity                 | little's ethnicity                                                                                            | 
+| ChildNationality               | little's nationality                                                                                          | 
+| ChildAge                       | little's age current age                                                                                      | 
+| IncarceratedParent             | indicates if one of the little's parents/gaurdians is incarcerated                                            | 
+| AdultChildRelationship         | indicate the relationship the little's gaurdian shares with them (mother, grandmother, etc.)                  | 
+| ChildZip                       | little's 5 digit zip code at the time of the match                                                            | 
+| ChildSchoolHash                | hashed id for little's school at the time of the match                                                        | 
+| ChildGrade                     | little's grade at the time of the match                                                                       | 
+| ChildLivingSituation           | little's living situation at the time of the match (who they lived with)                                      | 
+| ChildIncomeLevel               | income level of the little's household at the time of the match                                               | 
+| MilitaryParent                 | indicates if one of the little's parents/gaurdians was in the military at the time of the match               | 
+| ParentDeployed                 | indicates if the parent/gaurdian in the military was deployed at the time of the match                        | 
+| ChildFamilyAssistance          | indicates if the family recieves public financial assistance                                                  | 
+| ChildFreeReducedlunch          | indicates if the little qualified for a free/reduced lunch program at their school at the time of the match   | 
+| CustodialAdultEmployerHash     | hashed id for the parent/gaurdian's employer at the time of the match                                         | 
+| ChildReferralSource            | how the little heard about the BBBS (from a preset list of options)                                           | 
+| ChildReferralType              | how the little heard about the BBBS (from a preset list of options)                                           | 
+| ChildAutomaticProgramName      | indicates if the little signed up through a community or site based matching program                          | 
+| ChildReportSources             | tag used by BBBS team to pull reports on littles for a specific program                                       | 
+| ChildActiveQueue               | little's current match status (in enrollment, ready to be matched, pending match approval, matched)           | 
+| VolGender                      | big's gender                                                                                                  | 
+| VolEthnicity                   | big's ethinicity                                                                                              | 
+| VolNationality                 | big's nationality                                                                                             | 
+| VolAge                         | big's current age                                                                                             | 
+| VolZip                         | big's 5 digit zip code at the time of the match                                                               | 
+| VolEducationLevel              | big's highest level of education achieved at the time of the match                                            | 
+| VolMaritalStatus               | big's marital staus at the time of the match                                                                  | 
+| VolOccupation                  | big's occupation at the time of the match                                                                     | 
+| VolEmployerZipCode             | 5 digit zip code of the big's employer                                                                        | 
+| VolEmploymentLengthYears       | number of years the big has been employed with current employer (additive with months)                        | 
+| VolEmploymentLengthMonths      | number of months the big has been employed with current employer (addititve with years)                       | 
+| VolReferralSource              | how the big heard about the BBBS (from a preset list of options)                                              | 
+| VolReferralType                | how the big heard about the BBBS (from a preset list of options)                                              | 
+| VolunteerType                  | "Big"                                                                                                         | 
+| VolAutomaticProgramName        | indicates if the big signed up through a community or site based matching program                             | 
+| VolReportSources               | tag used by BBBS team to pull reports on bigs for a specific program                                          | 
+| VolActiveQueue                 | big's current match status (in enrollment, ready to be matched, pending match approval, matched)              | 
+| Beg                            | 1 if the match was open a the start of the the time period of the data extract, 0 otherwise                   | 
+| Open                           | 1 if the match was opened during the time period of the data extract, 0 otherwise                             | 
+| Close                          | 1 if the match was closed during the time period of the data extract, 0 otherwise                             | 
+| End                            | 1 if the match was open at the end of the time period of the data extract, 0 otherwise                        | 
+| AgencyID                       | numeric id corresponding to AgencyName                                                                        | 
+| AgencyGroupKey                 | numeric id corresponding to AgencyGroup                                                                       | 
+| LocationKey                    | numeric id corresponding to OfficeName                                                                        | 
+| TeamKey                        | numeric id corresponding to TeamName                                                                          | 
+| UserKey                        | numeric id of the BBBS staff member responsible for the match                                                 | 
+| ChildPartKey                   | numeric id for the little                                                                                     | 
+| CustodialAdultKey              | numeric id for the little's primary parent/gaurdian                                                           | 
+| ChildEthnicityKey              | numeric id corresponding to ChildEthnicity                                                                    | 
+| ChildNationalityKey            | numeric id corresponding to ChildNationality                                                                  | 
+| ChildGenderKey                 | numeric id corresponding to ChildGender                                                                       | 
+| VolPartKey                     | numeric id for the big                                                                                        | 
+| VolEthnicityKey                | numeric id corresponding to VolEthnicity                                                                      | 
+| VolNationalityKey              | numeric id corresponding to VolNationality                                                                    | 
+| VolGenderKey                   | numeric id corresponding to VolGender                                                                         | 
+| MatchKey                       | numeric id for the match (little-big pair)                                                                    | 
+| QueueKey                       | numeric id corresponding to QueueDescription                                                                  | 
+| MatchTypeKey                   | numeric id corresponding to MatchType                                                                         | 
+| MatchActivityKey               | numeric id for the program through which the match was made                                                   | 
+| MatchSiteKey                   | numeric id for the site through which the match was made                                                      | 
+| StatusKey                      | numeric id corresponding to MatchStatus                                                                       | 
+| MatchSupportLevelKey           | numeric id corresponding to MatchSupportLevel                                                                 | 
+| ChildReportSourcesKey          | numeric id corresponding to ChildReportSources                                                                | 
+| ChildAutomaticProgramKey       | numeric id corresponding to ChildAutomaticProgramName                                                         | 
+| VolReportSourcesKey            | numeric id corresponding to VolReportSources                                                                  | 
+| VolAutomaticProgramKey         | numeric id corresponding to VolAutomaticProgramName                                                           | 
+| ChildReferralSourceKey         | numeric id corresponding to ChildReferralSource                                                               | 
+| ChildReferralSourceTypeKey     | numeric id corresponding to ChildReferralType                                                                 | 
+| ChildPartnerAffiliationKey     | numeric id of BBBS partner organization the little was involved with at the time of the match                 | 
+| ChildPartnerAffiliationTypeKey | numeric id of the type of the BBBS partner organization the little was involved with at the time of the match | 
+| VolReferralSourceKey           | numeric id corresponding to VolReferralSource                                                                 | 
+| VolReferralSourceTypeKey       | numeric id corresponding to VolReferralType                                                                   | 
+| VolPartnerAffiliationKey       | numeric id BBBS partner organization the big was involved with at the time of the match                       | 
+| VolPartnerAffiliationTypeKey   | numeric id of the type of the BBBS partner organization the big was involved with at the time of the match    | 
+| VolunteerTypeKey               | numeric id corresponding to VolunteerType                                                                     | 
+| MatchReportSourcesKey          | numeric id corresponding to MatchReportSources                                                                | 
