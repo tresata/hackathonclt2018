@@ -121,11 +121,18 @@ You can find the data on HDFS in the /data folder
 
 [Census](https://factfinder.census.gov/faces/nav/jsf/pages/download_center.xhtml)
 
+[Housing Choice Vouchers](https://egis-hud.opendata.arcgis.com/datasets/8d45c34f7f64433586ef6a448d00ca12_0?geometry=97.375%2C12.813%2C71.887%2C54.725)
+
+[National Housing Preservation Database](http://preservationdatabase.org/)
+
 **Economics**
 
 [Consumer Financial Protection Bureau](https://www.consumerfinance.gov/data-research/mortgage-performance-trends/download-the-data/)
 
 [Business Patterns](https://lehd.ces.census.gov/data/j2j_beta.html)
+
+[Tax Parcel with CAMA Data](http://maps.co.mecklenburg.nc.us/openmapping/data.html)
+
 
 **Education**
 
