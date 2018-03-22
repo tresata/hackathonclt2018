@@ -31,7 +31,7 @@ Table of Content:
 
 You can obtain a username and login information from one of the Tresata representatives or from sponsor's room (downstairs).
 
-ssh into a server where you can access the BBBS data.
+ssh into a server where you can access the data.
 
     > ssh <username>@hack02.nscom.com OR
     > ssh <username>@hack03.nscom.com OR
@@ -66,7 +66,7 @@ or
 You can find the data on local (all machines) in the /srv/data directory
 
 ```
-├── interviews
+├── housing
 │   ├── B108.doc
 │   ├── B109.doc
 │   ├── B120.doc
@@ -76,7 +76,7 @@ You can find the data on local (all machines) in the /srv/data directory
 │   ├── ...
 │   ├── ...
 │   └── PCL9.doc
-├── matches
+├── economics 
 │   ├── all
 │   │   ├── child_volunteer_keys.bsv
 │   │   ├── match_details_new.bsv
@@ -90,8 +90,8 @@ You can find the data on local (all machines) in the /srv/data directory
 │       ├── match_details_new.bsv
 │       ├── match_details_old.bsv
 │       └── youth_outcome_reports.bsv
-├── question_ids.bsv
-└── unmatched
+├── education
+└── transportation
     └── rtbm_reports.bsv
 ```
 
@@ -113,17 +113,49 @@ You can find the data on HDFS in the /data folder
 
 **Housing**
 
+[Housing and Urban Development](https://www.hudexchange.info/resource/4868/affh-raw-data/)
+
+[Zillow](https://www.zillow.com/research/data/)
+
+[Mecklenburg Quality of Life](https://mcmap.org/qol/)
+
+[Census](https://factfinder.census.gov/faces/nav/jsf/pages/download_center.xhtml)
+
 **Economics**
+
+[Consumer Financial Protection Bureau](https://www.consumerfinance.gov/data-research/mortgage-performance-trends/download-the-data/)
+
+[Business Patterns](https://lehd.ces.census.gov/data/j2j_beta.html)
 
 **Education**
 
+[North Carolina School Board](http://www.ncpublicschools.org/fbs/accounting/data/)
+
+[Survey on US Public Schools](https://catalog.data.gov/dataset/2010-school-survey-on-crime-and-safety)
+
 **Transportation**
+
+[Environmental Protection Agency](https://catalog.data.gov/dataset/walkability-index)
+
+[Mecklenburg Quality of Life](https://mcmap.org/qol/)
 
 **Health**
 
+[500 Cities Healthcare Data](https://catalog.data.gov/dataset/500-cities-census-tract-level-data-gis-friendly-format)
+
+[Healthcare Cost & Utilization Project](https://www.ahrq.gov/research/data/hcup/index.html)
+
+[Medicare Provider Utlization & Payment Data](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html)
+
 **Crime**
 
+[Mecklenburg Quality of Life](https://mcmap.org/qol/)
+
+[Charlote Metro PD](http://charlottenc.gov/CMPD/Safety/Pages/CrimeStats.aspx)
+
 **Demographics**
+
+[Census](https://factfinder.census.gov/faces/nav/jsf/pages/download_center.xhtml)
 
 ## Hive
 
