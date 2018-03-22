@@ -12,6 +12,7 @@ Table of Content:
 * [Machines](https://github.com/tresata/hackathon2018#machines)
 * [HDFS](https://github.com/tresata/hackathon2018#hdfs)
 * [Data](https://github.com/tresata/hackathon2018#data)
+* [Data Links](https://github.com/tresata/hackathon2018#data-links)
 * [Hive](https://github.com/tresata/hackathon2018#hive)
 * [Spark](https://github.com/tresata/hackathon2018#spark)
 * [pySpark](https://github.com/tresata/hackathon2018#pyspark)
@@ -59,7 +60,7 @@ or
 
 ## Data
 
-**Data Dictionary** : The links to the source data dictionaries can be found [here](https://github.com/tresata/hackathon2018/blob/master/datadictionary) . For any additional questions please use the DATA slack channel.
+**Data Dictionary** : The links to the public source data dictionaries can be found in the next section and additional information cn be found [here](https://github.com/tresata/hackathon2018/blob/master/datadictionary) . For any further questions please use the DATA slack channel.
 
 **LOCAL**
 You can find the data on local (all machines) in the /srv/data directory
@@ -108,6 +109,21 @@ You can find the data on HDFS in the /data folder
     /data/bbbs/matches/unsuccessful/match_details_new.bsv
     /data/bbbs/matches/unsuccessful/match_details_old.bsv
     /data/bbbs/unmatched/rtbm_reports.bsv
+## Data Links
+
+**Housing**
+
+**Economics**
+
+**Education**
+
+**Transportation**
+
+**Health**
+
+**Crime**
+
+**Demographics**
 
 ## Hive
 
