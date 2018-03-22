@@ -1,9 +1,9 @@
 Hackathon 2018
 ==============
 
-Welcome to hackathon 2018!
+Welcome to hackathonCLT 2018!
 
-Download the kickoff deck for more information on the business problem, the hackathon agenda, the data, and more! Find it in the data folder: [Hackathon 2018 kickoff deck](https://github.com/tresata/hackathon2018/blob/master/data/hackathon_kickoff_deck2018.pdf)
+Download the kickoff deck for more information on the business problem, the hackathonCLT agenda, the data, and more! Find it in the data folder: [HackathonCLT 2018 kickoff deck](https://github.com/tresata/hackathon2018/blob/master/data/hackathon_kickoff_deck2018.pdf)
 
 Table of Content: 
 
