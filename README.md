@@ -7,7 +7,7 @@ Download the kickoff deck for more information on the business problem, the hack
 
 Table of Content: 
 
-* [IMPORTANT INFORMATION](https://github.com/tresata/hackathon2018#important-information)
+* [IMPORTANT INFORMATION](#important-information)
 * [Getting Started](https://github.com/tresata/hackathon2018#getting-started)
 * [Machines](https://github.com/tresata/hackathon2018#machines)
 * [HDFS](https://github.com/tresata/hackathon2018#hdfs)
@@ -23,7 +23,7 @@ Table of Content:
 * [Data](https://github.com/tresata/hackathon2018#data)
 * [Data Links](https://github.com/tresata/hackathon2018#data-links)
 
-##IMPORTANT INFORMATION
+## IMPORTANT INFORMATION
 
 * Please make sure you spread out on all the boxes. There are 4 servers available for login, make sure you spreadout and not all login to 1 box. 
 * Use tmux once you login into the server. If not, your session could get terminated and you can lose your work. Just type "tmux" once you login. To re-attach a tmux session "tmux attach". https://tmux.github.io/
