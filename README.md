@@ -11,8 +11,6 @@ Table of Content:
 * [Getting Started](https://github.com/tresata/hackathon2018#getting-started)
 * [Machines](https://github.com/tresata/hackathon2018#machines)
 * [HDFS](https://github.com/tresata/hackathon2018#hdfs)
-* [Data](https://github.com/tresata/hackathon2018#data)
-* [Data Links](https://github.com/tresata/hackathon2018#data-links)
 * [Hive](https://github.com/tresata/hackathon2018#hive)
 * [Spark](https://github.com/tresata/hackathon2018#spark)
 * [pySpark](https://github.com/tresata/hackathon2018#pyspark)
@@ -21,6 +19,9 @@ Table of Content:
 * [Scalding](https://github.com/tresata/hackathon2018#scalding)
 * [Tresata Software](https://github.com/tresata/hackathon2018#tresata-software)
 * [Resource Manager](https://github.com/tresata/hackathon2018#resource-manager)
+* [PuTTY](https://github.com/tresata/hackathon2018#putty)
+* [Data](https://github.com/tresata/hackathon2018#data)
+* [Data Links](https://github.com/tresata/hackathon2018#data-links)
 
 ## IMPORTANT INFORMATION
 
@@ -58,45 +59,8 @@ or
 
     > hadoop fs -ls /user/username
 
-## Data
-
-**Data Dictionary** : The links to the public source data dictionaries can be found in the next section and additional information cn be found [here](https://github.com/tresata/hackathon2018/blob/master/datadictionary) . For any further questions please use the DATA slack channel.
-
-**LOCAL**
-You can find the data on local (all machines) in the /srv/data directory
-
-```
-├── housing
-│   ├── B108.doc
-│   ├── B109.doc
-│   ├── B120.doc
-│   ├── B124.doc
-│   ├── B130.doc
-│   ├── ...
-│   ├── ...
-│   ├── ...
-│   └── PCL9.doc
-├── economics 
-│   ├── all
-│   │   ├── child_volunteer_keys.bsv
-│   │   ├── match_details_new.bsv
-│   │   ├── match_details_old.bsv
-│   │   ├── youth_outcome_reports_new.bsv
-│   │   └── youth_outcome_reports_old.bsv
-│   ├── active
-│   │   ├── match_details.bsv
-│   │   └── youth_outcome_reports.bsv
-│   └── unsuccessful
-│       ├── match_details_new.bsv
-│       ├── match_details_old.bsv
-│       └── youth_outcome_reports.bsv
-├── education
-└── transportation
-    └── rtbm_reports.bsv
-```
-
-
 **HDFS**
+
 You can find the data on HDFS in the /data folder
 
     /data/bbbs/matches/all/child_volunteer_keys.bsv
@@ -109,60 +73,6 @@ You can find the data on HDFS in the /data folder
     /data/bbbs/matches/unsuccessful/match_details_new.bsv
     /data/bbbs/matches/unsuccessful/match_details_old.bsv
     /data/bbbs/unmatched/rtbm_reports.bsv
-## Data Links
-
-**Housing**
-
-[Housing and Urban Development](https://www.hudexchange.info/resource/4868/affh-raw-data/)
-
-[Zillow](https://www.zillow.com/research/data/)
-
-[Mecklenburg Quality of Life](https://mcmap.org/qol/)
-
-[Census](https://factfinder.census.gov/faces/nav/jsf/pages/download_center.xhtml)
-
-[Housing Choice Vouchers](https://egis-hud.opendata.arcgis.com/datasets/8d45c34f7f64433586ef6a448d00ca12_0?geometry=97.375%2C12.813%2C71.887%2C54.725)
-
-[National Housing Preservation Database](http://preservationdatabase.org/)
-
-**Economics**
-
-[Consumer Financial Protection Bureau](https://www.consumerfinance.gov/data-research/mortgage-performance-trends/download-the-data/)
-
-[Business Patterns](https://lehd.ces.census.gov/data/j2j_beta.html)
-
-[Tax Parcel with CAMA Data](http://maps.co.mecklenburg.nc.us/openmapping/data.html)
-
-
-**Education**
-
-[North Carolina School Board](http://www.ncpublicschools.org/fbs/accounting/data/)
-
-[Survey on US Public Schools](https://catalog.data.gov/dataset/2010-school-survey-on-crime-and-safety)
-
-**Transportation**
-
-[Environmental Protection Agency](https://catalog.data.gov/dataset/walkability-index)
-
-[Mecklenburg Quality of Life](https://mcmap.org/qol/)
-
-**Health**
-
-[500 Cities Healthcare Data](https://catalog.data.gov/dataset/500-cities-census-tract-level-data-gis-friendly-format)
-
-[Healthcare Cost & Utilization Project](https://www.ahrq.gov/research/data/hcup/index.html)
-
-[Medicare Provider Utlization & Payment Data](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html)
-
-**Crime**
-
-[Mecklenburg Quality of Life](https://mcmap.org/qol/)
-
-[Charlote Metro PD](http://charlottenc.gov/CMPD/Safety/Pages/CrimeStats.aspx)
-
-**Demographics**
-
-[Census](https://factfinder.census.gov/faces/nav/jsf/pages/download_center.xhtml)
 
 ## Hive
 
@@ -276,8 +186,99 @@ For login, it's the same username and password you use or SSH.
 
 http://hack01.nscom.com:8088/
 
-### PuTTY
+## PuTTY
 Here is the link to download puTTY for remote access to the data files. This is useful if you have a Windows computer. The download link is:
 
 https://www.putty.org/
+
+## Data
+
+**Data Dictionary** : The links to the public source data dictionaries can be found in the next section and additional information cn be found [here](https://github.com/tresata/hackathon2018/blob/master/datadictionary) . For any further questions please use the DATA slack channel.
+
+**LOCAL**
+You can find the data on local (all machines) in the /srv/data directory
+
+```
+├── housing
+│   ├── B108.doc
+│   ├── B109.doc
+│   ├── B120.doc
+│   ├── B124.doc
+│   ├── B130.doc
+│   ├── ...
+│   ├── ...
+│   ├── ...
+│   └── PCL9.doc
+├── economics 
+│   ├── all
+│   │   ├── child_volunteer_keys.bsv
+│   │   ├── match_details_new.bsv
+│   │   ├── match_details_old.bsv
+│   │   ├── youth_outcome_reports_new.bsv
+│   │   └── youth_outcome_reports_old.bsv
+│   ├── active
+│   │   ├── match_details.bsv
+│   │   └── youth_outcome_reports.bsv
+│   └── unsuccessful
+│       ├── match_details_new.bsv
+│       ├── match_details_old.bsv
+│       └── youth_outcome_reports.bsv
+├── education
+└── transportation
+    └── rtbm_reports.bsv
+```
+
+## Data Links
+
+**Housing**
+
+[Housing and Urban Development](https://www.hudexchange.info/resource/4868/affh-raw-data/)
+
+[Zillow](https://www.zillow.com/research/data/)
+
+[Mecklenburg Quality of Life](https://mcmap.org/qol/)
+
+[Census](https://factfinder.census.gov/faces/nav/jsf/pages/download_center.xhtml)
+
+[Housing Choice Vouchers](https://egis-hud.opendata.arcgis.com/datasets/8d45c34f7f64433586ef6a448d00ca12_0?geometry=97.375%2C12.813%2C71.887%2C54.725)
+
+[National Housing Preservation Database](http://preservationdatabase.org/)
+
+**Economics**
+
+[Consumer Financial Protection Bureau](https://www.consumerfinance.gov/data-research/mortgage-performance-trends/download-the-data/)
+
+[Business Patterns](https://lehd.ces.census.gov/data/j2j_beta.html)
+
+[Tax Parcel with CAMA Data](http://maps.co.mecklenburg.nc.us/openmapping/data.html)
+
+**Education**
+
+[North Carolina School Board](http://www.ncpublicschools.org/fbs/accounting/data/)
+
+[Survey on US Public Schools](https://catalog.data.gov/dataset/2010-school-survey-on-crime-and-safety)
+
+**Transportation**
+
+[Environmental Protection Agency](https://catalog.data.gov/dataset/walkability-index)
+
+[Mecklenburg Quality of Life](https://mcmap.org/qol/)
+
+**Health**
+
+[500 Cities Healthcare Data](https://catalog.data.gov/dataset/500-cities-census-tract-level-data-gis-friendly-format)
+
+[Healthcare Cost & Utilization Project](https://www.ahrq.gov/research/data/hcup/index.html)
+
+[Medicare Provider Utlization & Payment Data](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html)
+
+**Crime**
+
+[Mecklenburg Quality of Life](https://mcmap.org/qol/)
+
+[Charlote Metro PD](http://charlottenc.gov/CMPD/Safety/Pages/CrimeStats.aspx)
+
+**Demographics**
+
+[Census](https://factfinder.census.gov/faces/nav/jsf/pages/download_center.xhtml)
     
