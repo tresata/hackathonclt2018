@@ -14,7 +14,7 @@ Table of Content:
 * [Hive](#hive)
 * [Spark](#spark)
 * [pySpark](#pyspark)
-* [Anaconda Python](#anaconda)
+* [Anaconda Python](#anaconda-python)
 * [Tresata Software](#tresata-software)
 * [Resource Manager](#resource-manager)
 * [PuTTY](#putty)
