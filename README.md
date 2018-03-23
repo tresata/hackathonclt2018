@@ -182,36 +182,92 @@ https://www.putty.org/
 **Data Dictionary** : The links to the public source data dictionaries can be found in the next section. For any further questions please use the DATA slack channel.
 
 **LOCAL**
-You can find the data on local (all machines) in the /srv/data directory
+You can find the data on local (all machines) in the /srv/data directory. We have provided the csv and parquet versions of the pre-downloaded files. 
 
 ```
-├── housing
-│   ├── B108.doc
-│   ├── B109.doc
-│   ├── B120.doc
-│   ├── B124.doc
-│   ├── B130.doc
-│   ├── ...
-│   ├── ...
-│   ├── ...
-│   └── PCL9.doc
-├── economics 
-│   ├── all
-│   │   ├── child_volunteer_keys.bsv
-│   │   ├── match_details_new.bsv
-│   │   ├── match_details_old.bsv
-│   │   ├── youth_outcome_reports_new.bsv
-│   │   └── youth_outcome_reports_old.bsv
-│   ├── active
-│   │   ├── match_details.bsv
-│   │   └── youth_outcome_reports.bsv
-│   └── unsuccessful
-│       ├── match_details_new.bsv
-│       ├── match_details_old.bsv
-│       └── youth_outcome_reports.bsv
+├── crime
+│   └── mecklenburg-quality-of-life-survey
+│       ├── csv
+│       └── parq
+├── demographics
+│   ├── census
+│   │   ├── csv
+│   │   └── parq
+│   ├── mecklenburg-public-services-geojson
+│   └── mecklenburg-quality-of-life-survey
+│       ├── csv
+│       └── parq
+├── economics
+│   ├── business-patterns
+│   │   ├── bsv
+│   │   └── parq
+│   ├── consumer-financial-protection-bureau
+│   │   ├── consumer-complaints
+│   │   │   ├── csv
+│   │   │   │   └── consumer-complaints.csv
+│   │   │   └── parq
+│   │   ├── financial-well-being-survey
+│   │   │   └── csv
+│   │   ├── home-mortgage-disclosure-act
+│   │   │   ├── csv
+│   │   │   └── parq
+│   │   └── national-mortgage-rates
+│   │       ├── csv
+│   │       └── parq
+│   └── mecklenburg-quality-of-life-survey
+│       ├── csv
+│       └── parq
 ├── education
+│   ├── graduation-counts-including-summer-school
+│   │   ├── csv
+│   │   └── parq
+│   ├── mecklenburg-quality-of-life-survey
+│   │   ├── csv
+│   │   └── parq
+│   ├── nc-student-counts-grade-race-sex
+│   │   ├── csv
+│   │   └── parq
+│   ├── principles-report-nc
+│   │   ├── csv
+│   │   └── parq
+│   └── school-to-geocode-mapping
+│       ├── csv
+│       └── parq
+├── geo-mappings
+│   └── csv
+├── health
+│   ├── clean-air-carolinas
+│   │   ├── csv
+│   │   └── parq
+│   ├── mecklenburg-quality-of-life-survey
+│   │   ├── csv
+│   │   └── parq
+│   └── npa-mosquito-data
+│       ├── bsv
+│       └── parq
+├── housing
+│   ├── charlotte
+│   ├── HUD
+│   │   ├── affh
+│   │   │   ├── mecklenburg
+│   │   │   │   ├── csv
+│   │   │   │   └── parq
+│   │   │   ├── national
+│   │   │   │   └── csv
+│   │   │   └── raw-affh-data
+│   │   └── fair-market-value
+│   │       ├── bsv
+│   │       └── parq
+│   ├── mecklenburg-quality-of-life-survey
+│   │   ├── csv
+│   │   └── parq
+│   └── zillow
+│       ├── csv
+│       └── parq
 └── transportation
-    └── rtbm_reports.bsv
+    └── mecklenburg-quality-of-life-survey
+        ├── csv
+        └── parq
 ```
 
 ## Data Links
