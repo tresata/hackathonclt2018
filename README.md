@@ -59,7 +59,7 @@ or
 
 **HDFS**
 
-You can find the data on HDFS in the /data folder
+You can find the pre-downloaded data on HDFS in the /data/hackathon folder:
 
     /data/hackathon/housing
     /data/hackathon/education
@@ -67,6 +67,7 @@ You can find the data on HDFS in the /data folder
     /data/hackathon/health
     /data/hackathon/transporation
     /data/hackathon/demographics
+    /data/hackathon/crime
 
 ## Hive
 
