@@ -193,7 +193,7 @@ https://www.putty.org/
 
 ## Data
 
-**Data Dictionary** : The links to the public source data dictionaries can be found in the next section and additional information cn be found [here](https://github.com/tresata/hackathon2018/blob/master/datadictionary) . For any further questions please use the DATA slack channel.
+**Data Dictionary** : The links to the public source data dictionaries can be found in the next section and additional information can be found [here](blob/master/datadictionary) . For any further questions please use the DATA slack channel.
 
 **LOCAL**
 You can find the data on local (all machines) in the /srv/data directory
