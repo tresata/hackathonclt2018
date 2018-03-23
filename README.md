@@ -179,7 +179,7 @@ https://www.putty.org/
 
 ## Data
 
-**Data Dictionary** : The links to the public source data & the corresponding data dictionaries can be found in the next section. Additionally, descriptions of the pre-downloaded files (already stored locally and on HDFS) can be found [here](hackathon2018/datadictionary) For any further questions please use the DATA slack channel.
+**Data Dictionary** : The links to the public source data & the corresponding data dictionaries can be found in the next section. Additionally, descriptions of the pre-downloaded files (already stored locally and on HDFS) can be found [here](https://github.com/tresata/hackathon2018/blob/master/datadictionary) For any further questions please use the DATA slack channel.
 
 **LOCAL**
 You can find the data on local (all machines) in the /srv/data directory. We have provided the csv and parquet versions of the pre-downloaded files. 
