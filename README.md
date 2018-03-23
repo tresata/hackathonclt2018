@@ -61,16 +61,12 @@ or
 
 You can find the data on HDFS in the /data folder
 
-    /data/bbbs/matches/all/child_volunteer_keys.bsv
-    /data/bbbs/matches/all/match_details_new.bsv
-    /data/bbbs/matches/all/match_details_old.bsv
-    /data/bbbs/matches/all/youth_outcome_reports_new.bsv
-    /data/bbbs/matches/all/youth_outcome_reports_old.bsv
-    /data/bbbs/matches/active/match_details_new.bsv
-    /data/bbbs/matches/active/youth_outcome_reports.bsv
-    /data/bbbs/matches/unsuccessful/match_details_new.bsv
-    /data/bbbs/matches/unsuccessful/match_details_old.bsv
-    /data/bbbs/unmatched/rtbm_reports.bsv
+    /data/hackathon/housing
+    /data/hackathon/education
+    /data/hackathon/economics
+    /data/hackathon/health
+    /data/hackathon/transporation
+    /data/hackathon/demographics
 
 ## Hive
 
@@ -95,13 +91,13 @@ Try pasting the following query into the hive command-line interface:
     unsuccessful_youth_outcome_reports_new
     
     hive> set hive.cli.print.header=true;
-    hive> select * from active_match_details_new limit 10;
+    hive> select * from qol-education.csv limit 10;
 
 This will return all the fields for the first ten items in the active_match_details_new table.
 
 If you'd like to create a file from the command line, you can use a create table command:
 
-    hive> create table test row format delimited fields terminated by '|' stored as textfile as select * from active_match_details_new limit 10;
+    hive> create table test row format delimited fields terminated by '|' stored as textfile as select * from qol-education.csv limit 10;
     
 We are also running hive-server on hack01.nscom.com. You can connect to them with JDBC/ODBC. For example to connect to hack01 with JDBC you would use this connect string:
 
@@ -120,8 +116,8 @@ Now give the Spark-shell a test:
 
 Read in the data and run a simple query that calcuates the unique count of ChildZip:
 
-    val df = spark.sqlContext.read.parquet("/data/bbbs-parquet/matches/active/match_details_new.parquet")
-    df.groupBy("ChildZip").count().collect()
+    val df = spark.sqlContext.read.parquet("/data/hackathon/education/mecklenburg-quality-of-life-survey/csv/qol-education.csv")
+    df.groupBy("NPA").count().collect()
 
 
 Note that for your "production" run on the dataset you might want to increase resources used on the cluster:
@@ -142,8 +138,8 @@ You can also do the same query using a python version of the Spark shell.
 
 Read in the data and run a simple query that calcuates the unique count of ChildZip:
 
-    df = sqlContext.read.parquet("/data/bbbs-parquet/matches/active/match_details_new.parquet")
-    df.groupBy("ChildZip").count().collect()
+    df = sqlContext.read.parquet("data/hackathon/education/mecklenburg-quality-of-life-survey/csv/qol-education.csv")
+    df.groupBy("NPA").count().collect()
 
 Note that for your "production" run on the dataset you might want to increase resources used on the cluster:
 
