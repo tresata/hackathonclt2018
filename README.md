@@ -42,11 +42,11 @@ ssh into a server where you can access the data.
 
 and enter the password you were given.
 
-We made Hive, Spark, pySpark, R and Anaconda command-line interfaces available, and included a tool to compile and run simple Scalding or Spark scripts on-the-fly.
+We made Hive, Spark, pySpark, R and Anaconda Python command-line interfaces available, and included a tool to compile and run simple Scalding or Spark scripts on-the-fly.
 
 ## Machines
 
-We have a Hadoop cluster with one master and four slaves. The slaves have 32 cores, 6 X 1TB data drives, and 128GB of RAM each. You will have ssh access to the slaves.
+We have a Hadoop cluster with one master and four workers. The workers have 32 cores, 6 X 1TB data drives, and 128GB of RAM each. You will have ssh access to the workers.
 
 Please spread yourselves out across the machines.
 
@@ -104,10 +104,6 @@ This will return all the fields for the first ten items in the active_match_deta
 If you'd like to create a file from the command line, you can use a create table command:
 
     hive> create table test row format delimited fields terminated by '|' stored as textfile as select * from active_match_details_new limit 10;
-
-You can then extract the table from the hive warehouse for a table named test:
-
-    df-source-cat --input hive%bbbs.question_ids > textfile
     
 We are also running hive-server on hack01.nscom.com. You can connect to them with JDBC/ODBC. For example to connect to hack01 with JDBC you would use this connect string:
 
@@ -144,7 +140,7 @@ Keep in mind that a spark-shell takes up these resources on the cluster even whe
 
 You can also do the same query using a python version of the Spark shell.
 
-    >  /usr/local/lib/spark/bin/pyspark --num-executors 4 --executor-cores 1 --executor-memory 1G
+    >  /usr/local/lib/spark/bin/pyspark --executor-cores 1 --executor-memory 1G
 
 Read in the data and run a simple query that calcuates the unique count of ChildZip:
 
@@ -153,22 +149,17 @@ Read in the data and run a simple query that calcuates the unique count of Child
 
 Note that for your "production" run on the dataset you might want to increase resources used on the cluster:
 
-    --num-executors 4 --executor-memory 4G --executor-cores 4
+    --executor-memory 4G --executor-cores 4
 
 Keep in mind that a pyspark takes up these resources on the cluster even when you do not use them so please do not keep a pyspark shell (interpreter) with "production" resources open unused.  
-
-## SparkR
-
-**SparkR** can be found at /usr/local/lib/spark/bin
-
-You can also do the same query using a R version of the Spark shell.
-
-    >  /usr/local/lib/spark/bin/sparkR --num-executors 4 --executor-cores 1 --executor-memory 1G
 
 
 ## Anaconda
 Anaconda is a completely free Python distribution from [Continuum Analytics](https://www.continuum.io). It includes more than 400 of the most popular Python packages for science, math, engineering, and data analysis. See [the packages included with Anaconda](http://docs.continuum.io/anaconda/pkg-docs).
 
+Anaconda can be found here:
+
+    /usr/local/lib/anaconda
 
 Getting failimar with conda: http://conda.pydata.org/docs/using/index.html
 
@@ -182,7 +173,7 @@ TREK can be accessed via http://hack01.nscom.com:5603
 
 For login, it's the same username and password you use or SSH.
 
-## Resource Manager
+## YARN Resource Manager
 
 http://hack01.nscom.com:8088/
 
@@ -193,7 +184,7 @@ https://www.putty.org/
 
 ## Data
 
-**Data Dictionary** : The links to the public source data dictionaries can be found in the next section and additional information can be found [here](datadictionary) . For any further questions please use the DATA slack channel.
+**Data Dictionary** : The links to the public source data dictionaries can be found in the next section. For any further questions please use the DATA slack channel.
 
 **LOCAL**
 You can find the data on local (all machines) in the /srv/data directory
