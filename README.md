@@ -51,9 +51,25 @@ We made Hive, Spark, pySpark, R and Anaconda Python command-line interfaces avai
 
 ## Machines
 
-We have a Hadoop cluster with one master and four workers. The workers have 32 cores, 6 X 1TB data drives, and 128GB of RAM each. You will have ssh access to the workers.
+We have a Hadoop cluster with one master and four workers. The workers have 32 cores, 7 X 1TB data drives, and 128GB of RAM each. You will have ssh access to the workers.
 
 Please spread yourselves out across the machines.
+
+The /home directory on every machine is limited to 170G, and shared between everyone logged in to the server. If you need disk space to work please use one of the following directories on a 1TB data disk:
+
+    /data/0/work
+    /data/1/work
+    /data/2/work
+    /data/3/work
+    /data/4/work
+    /data/5/work
+    /data/6/work
+
+Do not work inside these directories directly, but instead create a subdirectory. For example:
+    mkdir /data/3/work/hacker123
+    # in case you want privacy
+    chmod og-rwx /data/3/work/hacker123
+    cd /data/3/work/hacker123
 
 ## HDFS
 To access your HDFS location, you need to use hadoop fs commands (some reference: http://www.folkstalk.com/2013/09/hadoop-fs-shell-command-example-tutorial.html). For example, to take a look at your home directory on HDFS, use
