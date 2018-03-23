@@ -17,7 +17,7 @@ Table of Content:
 * [pySpark](#pyspark)
 * [Anaconda Python](#anaconda-python)
 * [Tresata Software](#tresata-software)
-* [Resource Manager](#resource-manager)
+* [YARN Resource Manager](#yarn-resource-manager)
 * [PuTTY](#putty)
 * [SAMBA](#samba)
 * [Elasticsearch](#elasticsearch)
