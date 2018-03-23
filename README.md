@@ -3,7 +3,7 @@ Hackathon 2018
 
 Welcome to hackathonCLT 2018!
 
-Download the kickoff deck for more information on the business problem, the hackathonCLT agenda, the data, and more! Find it in the data folder: [HackathonCLT 2018 kickoff deck](https://github.com/tresata/hackathon2018/blob/master/data/hackathon_kickoff_deck2018.pdf)
+Download the kickoff deck for more information on the business problem, the hackathonCLT agenda, the data, and more! Find it in the data folder: [HackathonCLT 2018 kickoff deck](https://github.com/tresata/hackathonclt2018/blob/master/data/hackathonCLT%20MMXVIII%20-%20KICK%20OFF%20.pdf)
 
 Table of Content: 
 
@@ -130,7 +130,7 @@ Try pasting the following query into the hive command-line interface:
     housing_qol_housing
     
     hive> set hive.cli.print.header=true;
-    hive> select * from housting_qol_housing.csv limit 10;
+    hive> select * from housting_qol_housing limit 10;
 
 This will return all the fields for the first ten items in the active_match_details_new table.
 
