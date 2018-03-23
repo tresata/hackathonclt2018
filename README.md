@@ -19,6 +19,7 @@ Table of Content:
 * [Tresata Software](#tresata-software)
 * [Resource Manager](#resource-manager)
 * [PuTTY](#putty)
+* [SAMBA](#samba)
 * [Data](#data)
 * [Data Links](#data-links)
 
@@ -84,26 +85,41 @@ Try pasting the following query into the hive command-line interface:
 
     hive> show tables;
     OK
-    active_match_details_new
-    active_youth_outcome_reports_new
-    all_child_volunteer_keys
-    all_match_details_new
-    all_match_details_old
-    all_youth_outcome_reports_new
-    all_youth_outcome_reports_old
-    question_ids
-    unsuccessful_match_details_new
-    unsuccessful_match_details_old
-    unsuccessful_youth_outcome_reports_new
+  
+    economics_county_cb1500a11_business_patterns
+    economics_qol_economy
+    economics_zip_by_business_class_cb1500cz21_business_patterns
+    economics_zip_cb1500cz11_business_patterns
+    education_edge_geocode_postsecsch_nc_1516
+    education_edge_geocode_publicsch_nc_1516
+    education_qol_education
+    health_coulwood_a_primary_01_01_2017_02_28_2018
+    health_coulwood_a_secondary_01_01_2017_02_28_2018
+    health_coulwood_b_primary_01_01_2017_02_28_2018
+    health_coulwood_b_secondary_01_01_2017_02_28_2018
+    health_matthews_a_primary_01_01_2017_02_28_2018
+    health_matthews_a_secondary_01_01_2017_02_28_2018
+    health_matthews_b_primary_01_01_2017_02_28_2018
+    health_matthews_b_secondary_01_01_2017_02_28_2018
+    health_mceniry_a_primary_01_01_2017_02_28_2018
+    health_mceniry_a_secondary_01_01_2017_02_28_2018
+    health_mceniry_b_primary_01_01_2017_02_28_2018
+    health_mceniry_b_secondary_01_01_2017_02_28_2018
+    health_mosquito_data_dictionary
+    health_myers_park_a_primary_01_01_2017_02_28_2018
+    health_myers_park_a_secondary_01_01_2017_02_28_2018
+    health_myers_park_b_primary_01_01_2017_02_28_2018
+    health_myers_park_b_secondary_01_01_2017_02_28_2018
+    housing_qol_housing
     
     hive> set hive.cli.print.header=true;
-    hive> select * from qol-education.csv limit 10;
+    hive> select * from housting_qol_housing.csv limit 10;
 
 This will return all the fields for the first ten items in the active_match_details_new table.
 
 If you'd like to create a file from the command line, you can use a create table command:
 
-    hive> create table test row format delimited fields terminated by '|' stored as textfile as select * from qol-education.csv limit 10;
+    hive> create table test row format delimited fields terminated by '|' stored as textfile as select * from housing_qol_housing limit 10;
     
 We are also running hive-server on hack01.nscom.com. You can connect to them with JDBC/ODBC. For example to connect to hack01 with JDBC you would use this connect string:
 
@@ -181,6 +197,14 @@ http://hack01.nscom.com:8088/
 Here is the link to download puTTY for remote access to the data files. This is useful if you have a Windows computer. The download link is:
 
 https://www.putty.org/
+
+## Samba 
+
+You can also use Samba to connect to the servers and download the data locally. The samba share is:
+
+smb://hack01.nscom.com/data
+
+Instructions for how to use Samba for apple devices can be found [here](https://support.apple.com/en-us/HT204445). Help for connecting to a Samba share on a windows device can be found [here](https://www.techrepublic.com/article/how-to-connect-to-linux-samba-shares-from-windows-10/). 
 
 ## Data
 
