@@ -34,19 +34,19 @@ Please make sure you connect with your fellow hackers on [SLACK](https://hackath
 
 ## Getting Started
 
-You can obtain a username and login information from one of the Tresata representatives or from sponsor's room (downstairs).
+You can obtain a username and login information from command central (in the kids university downstairs).
 
 ssh into a server where you can access the data.
 
-    > ssh <username>@hack02.nscom.com OR
-    > ssh <username>@hack03.nscom.com OR
-    > ssh <username>@hack04.nscom.com OR
-    > ssh <username>@hack05.nscom.com
+    $ ssh <username>@hack02.nscom.com OR
+    $ ssh <username>@hack03.nscom.com OR
+    $ ssh <username>@hack04.nscom.com OR
+    $ ssh <username>@hack05.nscom.com
     
 
 and enter the password you were given.
 
-We made Hive, Spark, pySpark, R and Anaconda Python command-line interfaces available, and included a tool to compile and run simple Scalding or Spark scripts on-the-fly.
+We made Hive, Spark, pySpark, R and Anaconda Python command-line interfaces available.
 
 ## Machines
 
@@ -190,6 +190,8 @@ TREK can be accessed via http://hack01.nscom.com:5603
 For login, it's the same username and password you use or SSH.
 
 ## YARN Resource Manager
+
+This is where you can track jobs that run on the hadoop cluster:
 
 http://hack01.nscom.com:8088/
 
