@@ -20,6 +20,7 @@ Table of Content:
 * [Resource Manager](#resource-manager)
 * [PuTTY](#putty)
 * [SAMBA](#samba)
+* [Elasticsearch](#elasticsearch)
 * [Data](#data)
 * [Data Links](#data-links)
 
@@ -207,6 +208,10 @@ You can also use Samba to connect to the servers and download the data locally. 
 smb://hack01.nscom.com/data
 
 Instructions for how to use Samba for apple devices can be found [here](https://support.apple.com/en-us/HT204445). Help for connecting to a Samba share on a windows device can be found [here](https://www.techrepublic.com/article/how-to-connect-to-linux-samba-shares-from-windows-10/). 
+
+## Elasticsearch
+
+An Elasticsearch 5 cluster is available at port 9200 on all servers (hack01.nscom, hack02.nscom, hack03.nscom, hack04.nscom.com, hack05.nscom.com). There is no security enabled so you can create indices if you need to, but please **do not delete or modify other peoples indices**. 
 
 ## Data
 
