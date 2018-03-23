@@ -14,9 +14,7 @@ Table of Content:
 * [Hive](#hive)
 * [Spark](#spark)
 * [pySpark](#pyspark)
-* [SparkR](#sparkR)
-* [Anaconda](#anaconda)
-* [Scalding](#scalding)
+* [Anaconda Python](#anaconda)
 * [Tresata Software](#tresata-software)
 * [Resource Manager](#resource-manager)
 * [PuTTY](#putty)
@@ -53,11 +51,11 @@ Please spread yourselves out across the machines.
 ## HDFS
 To access your HDFS location, you need to use hadoop fs commands (some reference: http://www.folkstalk.com/2013/09/hadoop-fs-shell-command-example-tutorial.html). For example, to take a look at your home directory on HDFS, use
 
-    > hadoop fs -ls
+    $ hadoop fs -ls
 
 or
 
-    > hadoop fs -ls /user/username
+    $ hadoop fs -ls /user/username
 
 **HDFS**
 
@@ -78,7 +76,7 @@ You can find the data on HDFS in the /data folder
 
 Give Hive a whirl and run a sample query:
 
-    > hive
+    $ hive
 
 Try pasting the following query into the hive command-line interface:
 
@@ -117,7 +115,7 @@ If you need to provide a username and password, use the username we provided for
 
 Now give the Spark-shell a test:
 
-    > /usr/local/lib/spark/bin/spark-shell --executor-cores 1 --executor-memory 1G
+    $ /usr/local/lib/spark/bin/spark-shell --executor-cores 1 --executor-memory 1G
 
 
 Read in the data and run a simple query that calcuates the unique count of ChildZip:
@@ -140,7 +138,7 @@ Keep in mind that a spark-shell takes up these resources on the cluster even whe
 
 You can also do the same query using a python version of the Spark shell.
 
-    >  /usr/local/lib/spark/bin/pyspark --executor-cores 1 --executor-memory 1G
+    $ /usr/local/lib/spark/bin/pyspark --executor-cores 1 --executor-memory 1G
 
 Read in the data and run a simple query that calcuates the unique count of ChildZip:
 
@@ -154,10 +152,10 @@ Note that for your "production" run on the dataset you might want to increase re
 Keep in mind that a pyspark takes up these resources on the cluster even when you do not use them so please do not keep a pyspark shell (interpreter) with "production" resources open unused.  
 
 
-## Anaconda
+## Anaconda Python
 Anaconda is a completely free Python distribution from [Continuum Analytics](https://www.continuum.io). It includes more than 400 of the most popular Python packages for science, math, engineering, and data analysis. See [the packages included with Anaconda](http://docs.continuum.io/anaconda/pkg-docs).
 
-Anaconda can be found here:
+**Anaconda** can be found here:
 
     /usr/local/lib/anaconda
 
