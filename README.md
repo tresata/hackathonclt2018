@@ -222,7 +222,11 @@ https://www.putty.org/
 
 You can also use Samba to connect to the servers and download the data locally. The samba share is:
 
-smb://hack01.nscom.com/data
+    smb://hack01.nscom.com/data
+
+on windows this is:
+
+    \\hack01.nscom.com\data
 
 Instructions for how to use Samba for apple devices can be found [here](https://support.apple.com/en-us/HT204445). Help for connecting to a Samba share on a windows device can be found [here](https://www.techrepublic.com/article/how-to-connect-to-linux-samba-shares-from-windows-10/). 
 
