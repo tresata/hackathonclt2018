@@ -205,7 +205,7 @@ Data Inventory Engine built specifically to catalog, profile and report data ont
 TREK can be accessed via http://hack01.nscom.com:5603
 
 For login, it is user "tresata" and password "admin". After loggin in click on the menu icon next to the name "tresata" on the top left corner and select TREK.
-Once you select a dataset in TREK click on partitions and select a partition (typically there is only one). You should now see a summary of all the columns in the dataset.
+Once you select a dataset in TREK click on partitions and select a partition (typically there is only one). You should now see a summary of all the columns in the dataset. Click on a column to get the statistics for that one column.
 
 ## YARN Resource Manager
 
