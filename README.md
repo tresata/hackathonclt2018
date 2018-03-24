@@ -20,6 +20,7 @@ Table of Content:
 * [YARN Resource Manager](#yarn-resource-manager)
 * [PuTTY](#putty)
 * [SAMBA](#samba)
+* [FTP](#ftp)
 * [Elasticsearch](#elasticsearch)
 * [Data](#data)
 * [Data Links](#data-links)
@@ -229,6 +230,11 @@ on windows this is:
     \\hack01.nscom.com\data
 
 Instructions for how to use Samba for apple devices can be found [here](https://support.apple.com/en-us/HT204445). Help for connecting to a Samba share on a windows device can be found [here](https://www.techrepublic.com/article/how-to-connect-to-linux-samba-shares-from-windows-10/). 
+
+## FTP
+
+The data is also accessible via FTP on hack01.nscom.com. In a web browser:
+    ftp://hack01.nscom.com/hackathon
 
 ## Elasticsearch
 
