@@ -195,7 +195,20 @@ Anaconda is a completely free Python distribution from [Continuum Analytics](htt
 
     /usr/local/lib/anaconda
 
-Getting failimar with conda: http://conda.pydata.org/docs/using/index.html
+Getting familiar with conda: http://conda.pydata.org/docs/using/index.html
+
+An example of how to start anaconda python:
+```
+ssh hacker001@hack02.nscom.com
+hacker001@hack02.nscom.com's password:
+Last login: Fri Mar 23 21:42:20 2018 from 107.14.49.67
+[hacker001@hack02 ~]$ source /usr/local/lib/anaconda/bin/activate
+(base) [hacker001@hack02 ~]$ python
+Python 3.6.4 |Anaconda, Inc.| (default, Jan 16 2018, 18:10:19)
+[GCC 7.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+```
 
 
 ## Tresata Software
